@@ -12,16 +12,12 @@
 <code>
 1. Что выведет код ниже?
 alert( null || 2 || undefined );1
-
 2.Что выведет код ниже?
 alert( alert(1) || 2 || alert(3) );
-
 3. Что выведет код ниже?
 alert( 1 && null && 2 );
-
 4. Что выведет alert (И)?
 alert( alert(1) && alert(2) );
-<br>
 5. Что выведет этот код?
 alert( null || 2 && 3 || 4 );
 <br>
