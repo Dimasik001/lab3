@@ -128,4 +128,223 @@ pow(3, 2) = 3 * 3 = 9
 pow(3, 3) = 3 * 3 * 3 = 27
 pow(1, 100) = 1 * 1 * ...* 1 = 1
 Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
+----------------------------------------------------
+function func1() {
+    alert( null || 2 || undefined );1
+}
+
+function func2() {
+    alert( alert(1) || 2 || alert(3) );
+}
+
+function func3() {
+    alert( 1 && null && 2 );
+}
+
+function func4() {
+    alert( alert(1) && alert(2) );
+}
+
+function func5() {
+    alert( null || 2 && 3 || 4 );
+}
+
+function func6() {
+let age = 10;
+if (age >= 14 && age <= 90) {
+    alert( "В диопазоне" );
+    } else {
+    alert( "не В диопазоне" );    
+    }
+}
+
+
+function func7() {
+    let age = 30;
+    if (!(age >= 14 && age <= 90)) {
+    alert("не В диапазоне");
+    } else {
+    alert(" В диапазоне");
+    }
+}
+
+function func8() {
+    if (null || -1 && 1) alert( 'third' );
+    }
+
+
+function func9() {
+
+let login = prompt("Введите логин", "");
+if (login === "Админ") {
+let password = prompt("Введите пароль", "");
+
+if (password === "Я главный") {
+alert("Здравствуйте!");
+} else if (password === null || password === "") {
+alert("Отменено");
+} else {
+alert("Неверный пароль");
+}
+} else if (login === null || login === "") {
+alert("Отменено");
+} else {
+alert("Я вас не знаю");
+}
+}
+
+
+function func10() {
+let i = 3;
+while (i) {
+  alert( i-- );
+}
+}
+
+
+function func11() {
+    let i = 0;
+    while (i++ < 5) alert( i ); //5
+   
+    }
+
+    function func12() {
+for (let i = 0; i < 5; i++) alert( i ); //0-5
+
+for (let i = 0; i < 5; ++i) alert( i ); //0-4
+    }
+    
+    function func13() {
+        for (let i = 2; i <= 10; i += 2) {
+           alert(i);
+            }
+       }
+
+
+function func14() {
+let i = 0;
+while (i < 3) {
+alert(`number ${i}!`);
+i++;
+}
+}
+
+function func15() {
+let number;
+do {
+number = prompt("Введите число, большее 100", "");
+} while (number <= 100 && number !== null);
+if (number !== null) {
+    alert("Вы ввели число больше 100");
+} else {
+    alert("Операция отменена");
+}
+}
+function func16() {
+    //проверка на простое число
+function qqq(num) {
+    for(let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+      if(num % i === 0) {
+        return false;
+      }
+    }
+    return num > 1;
+  }
+  
+  function sss(n) {
+    const primes = [];
+    
+    for(let i = 2; i <= n; i++) {
+      if(qqq(i)) {
+        primes.push(i);
+      }
+    }
+    
+    return primes;
+  }
+  const n = 10;
+  const result = sss(n);
+  alert(result);
+}
+    
+function func17() {
+    let browser = 'Edge';
+if (browser === 'Edge') {
+    alert("You've got the Edge!");
+    } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+    alert('Okay we support these browsers too');
+    } else {
+    alert('We hope that this page looks ok!');
+    }
+}
+
+function func18() {
+const number = +prompt('Введите число между 0 и 3', '');
+
+switch (number) {
+case 0:
+alert('Вы ввели число 0');
+break;
+case 1:
+alert('Вы ввели число 1');
+break;
+case 2:
+case 3:
+alert('Вы ввели число 2, а может и 3');
+break;
+}
+}
+function func19() {
+    let age=20;
+function checkAge(age) {
+    if (age > 18) {
+      return true;
+    }//else {
+    // ...
+    return confirm('Родители разрешили?');
+  //}
+}
+  alert(checkAge(age));
+}
+
+function func20() {
+    let age=10;
+function checkAge1(age) {
+return age > 18 ? true : confirm('Родители разрешили?');
+    }
+function checkAge2(age) {
+return age > 18 || confirm('Родители разрешили?');
+}
+alert(checkAge1(age));
+alert(checkAge2(age));
+}
+
+function func21() {
+function min(a, b) {
+    if (a < b) {
+    return a;
+    } else {
+    return b;
+    }
+    }
+    alert(min(2, 5)); // Выведет 2
+    alert(min(3, -1)); // Выведет -1
+    alert(min(1, 1)); // Выведет 1
+}
+
+function func22() {
+function pow(x, n) {
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+    result *= x;
+    }
+    return result;
+    }
+    const x = prompt("Введите число x:");
+    const n = prompt("Введите степень n:");
+    const result = pow(x, n);
+    alert(`Результат: ${result}`);
+}
+  
   </code>
+  
